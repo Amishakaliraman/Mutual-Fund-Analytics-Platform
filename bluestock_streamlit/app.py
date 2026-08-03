@@ -16,7 +16,7 @@ st.set_page_config(
 # ==========================================================
 css = Path("Assets/style.css")
 def load_css():
-    with open("assets/style.css") as f:
+    with open("Assets/style.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 load_css()
