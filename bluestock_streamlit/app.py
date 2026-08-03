@@ -66,22 +66,22 @@ with st.sidebar:
     )
 
     st.page_link(
-        "Pages/Industry_Overview.py",
+        "pages/Industry_Overview.py",
         label="📊 Industry Overview"
     )
 
     st.page_link(
-        "Pages/Fund_Performance.py",
+        "pages/Fund_Performance.py",
         label="📈 Fund Performance"
     )
 
     st.page_link(
-        "Pages/Investor_Analytics.py",
+        "pages/Investor_Analytics.py",
         label="👥 Investor Analytics"
     )
 
     st.page_link(
-        "Pages/Portfolio_Analytics.py",
+        "pages/Portfolio_Analytics.py",
         label="💼 Portfolio Analytics"
     )
 
