@@ -8,3 +8,5 @@ requests
 scipy
 jupyter
 openpyxl 
+python-pptx
+kaleido
