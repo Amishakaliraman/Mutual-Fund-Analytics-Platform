@@ -14,18 +14,17 @@ st.set_page_config(
 # ==========================================================
 # Load CSS
 # ==========================================================
-css = Path("Assets/style.css")
-def load_css():
-    with open("Assets/style.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-load_css()
+BASE_DIR = Path(__file__).resolve().parent
+ASSETS_DIR = BASE_DIR / "Assets"
+css = ASSETS_DIR / "style.css"
 
 if css.exists():
     st.markdown(
         f"<style>{css.read_text()}</style>",
         unsafe_allow_html=True,
     )
+else:
+    st.warning("Style sheet not found: Assets/style.css")
 
 # ==========================================================
 # Sidebar
@@ -35,7 +34,7 @@ with st.sidebar:
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    logo = Path("Assets/logo.png")
+    logo = ASSETS_DIR / "logo.png"
 
     if logo.exists():
 
