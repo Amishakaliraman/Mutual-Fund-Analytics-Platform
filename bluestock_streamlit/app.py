@@ -60,30 +60,11 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.page_link(
-        "app.py",
-        label="🏠 Home"
-    )
-
-    st.page_link(
-        "pages/Industry_Overview.py",
-        label="📊 Industry Overview"
-    )
-
-    st.page_link(
-        "pages/Fund_Performance.py",
-        label="📈 Fund Performance"
-    )
-
-    st.page_link(
-        "pages/Investor_Analytics.py",
-        label="👥 Investor Analytics"
-    )
-
-    st.page_link(
-        "pages/Portfolio_Analytics.py",
-        label="💼 Portfolio Analytics"
-    )
+    st.page_link("app.py", label="🏠 Home")
+    st.page_link("pages/Industry_Overview.py", label="📊 Industry Overview")
+    st.page_link("pages/Fund_Performance.py", label="📈 Fund Performance")
+    st.page_link("pages/Investor_Analytics.py", label="👥 Investor Analytics")
+    st.page_link("pages/Portfolio_Analytics.py", label="💼 Portfolio Analytics")
 
     st.markdown("---")
 
