@@ -10,3 +10,4 @@ jupyter
 openpyxl 
 python-pptx
 kaleido
+streamlit==1.56.0

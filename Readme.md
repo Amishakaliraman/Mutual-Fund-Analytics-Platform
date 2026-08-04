@@ -1,7 +1,7 @@
 # Mutual Fund Analytics platform
 
 ## GitHub Repository
-https://github.com/Amishakaliraman/Capstone_project-1.git
+https://github.com/Amishakaliraman/Mutual-Fund-Analytics-Platform.git
 
 ## Technologies Used
 - Python
