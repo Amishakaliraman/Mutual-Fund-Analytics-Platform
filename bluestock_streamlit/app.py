@@ -95,6 +95,26 @@ Indian Mutual Fund Industry
 st.markdown("""
 <div class="hero">
 
+    
+import runpy
+import sys
+
+PAGES = {
+    "Home": None,
+    "Industry Overview": BASE_DIR / "pages" / "Industry_overview.py",
+    "Fund Performance": BASE_DIR / "pages" / "Fund_Performance.py",
+    "Investor Analytics": BASE_DIR / "pages" / "Investor_Analytics.py",
+    "Portfolio Analytics": BASE_DIR / "pages" / "Portfolio_Analytics.py",
+}
+
+selected_page = st.sidebar.selectbox("Navigate to", list(PAGES.keys()), index=0)
+
+if selected_page != "Home":
+    # Ensure the package path resolves imports inside page scripts
+    sys.path.insert(0, str(BASE_DIR))
+    runpy.run_path(str(PAGES[selected_page]), run_name="__main__")
+    st.stop()
+
 <h1>📊 Mutual Fund Analytics Platform</h1>
 
 <p>
