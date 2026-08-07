@@ -173,7 +173,7 @@ fig.update_layout(
     height=500
 )
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 st.subheader("🏆 Top 10 Funds by Latest NAV")
 
@@ -196,7 +196,7 @@ fig2.update_layout(
     height=500
 )
 
-st.plotly_chart(fig2, use_container_width=True)
+st.plotly_chart(fig2, width="stretch")
 
 st.subheader("📊 NAV Comparison")
 
@@ -217,4 +217,4 @@ fig3 = px.line(
 
 fig3.update_layout(height=500)
 
-st.plotly_chart(fig3, use_container_width=True)
+st.plotly_chart(fig3, width="stretch")

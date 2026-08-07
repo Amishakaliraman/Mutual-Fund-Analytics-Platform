@@ -137,7 +137,7 @@ with col1:
         paper_bgcolor="white"
     )
     
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 # ========================================
 # RIGHT SIDE - SECTOR DONUT
@@ -177,7 +177,7 @@ with col2:
         height=500
     )
 
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, width="stretch")
 
 st.divider()
 st.header("📈 Portfolio Diversification")
@@ -222,7 +222,7 @@ with col3:
         yaxis_title=""
     )
 
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, width="stretch")
 
 with col4:
 
@@ -242,7 +242,7 @@ with col4:
         bargap=0.08
     )
 
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4, width="stretch")
 
 st.divider()
 st.header("📋 Portfolio Holdings")
@@ -278,6 +278,6 @@ table_data.columns = [
 ]
 st.dataframe(
     table_data,
-    use_container_width=True,
+    width="stretch", 
     hide_index=True
 )
