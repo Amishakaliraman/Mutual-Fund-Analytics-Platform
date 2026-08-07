@@ -41,7 +41,8 @@ with st.sidebar:
         c1, c2, c3 = st.columns([1,2,1])
 
         with c2:
-            st.image(str(logo), width="stretch")
+            # use_column_width is widely supported; avoid invalid string values
+            st.image(str(logo), use_column_width=True)
 
     st.markdown(
         """
@@ -92,13 +93,10 @@ Indian Mutual Fund Industry
 # Hero
 # ==========================================================
 
-st.markdown("""
-<div class="hero">
-
-    
 import runpy
 import sys
 
+# In-app navigation: map friendly names to page scripts
 PAGES = {
     "Home": None,
     "Industry Overview": BASE_DIR / "pages" / "Industry_overview.py",
@@ -114,6 +112,9 @@ if selected_page != "Home":
     sys.path.insert(0, str(BASE_DIR))
     runpy.run_path(str(PAGES[selected_page]), run_name="__main__")
     st.stop()
+
+st.markdown("""
+<div class="hero">
 
 <h1>📊 Mutual Fund Analytics Platform</h1>
 
