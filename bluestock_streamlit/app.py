@@ -41,7 +41,7 @@ with st.sidebar:
         c1, c2, c3 = st.columns([1,2,1])
 
         with c2:
-            st.image(str(logo), use_container_width=True)
+            st.image(str(logo), width="stretch")
 
     st.markdown(
         """
@@ -60,11 +60,15 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.page_link("app.py", label="🏠 Home")
-    st.page_link("pages/Industry_Overview.py", label="📊 Industry Overview")
-    st.page_link("pages/Fund_Performance.py", label="📈 Fund Performance")
-    st.page_link("pages/Investor_Analytics.py", label="👥 Investor Analytics")
-    st.page_link("pages/Portfolio_Analytics.py", label="💼 Portfolio Analytics")
+    st.markdown("🏠 Home")
+
+    st.markdown("📊 Industry Overview")
+
+    st.markdown("📈 Fund Performance")
+
+    st.markdown("👥 Investor Analytics")
+
+    st.markdown("💼 Portfolio Analytics")
 
     st.markdown("---")
 
